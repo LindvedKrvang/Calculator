@@ -18,5 +18,10 @@ namespace Calculator
             }
             return result;
         }
+
+        public float Divide(float dividend, float divisor)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
