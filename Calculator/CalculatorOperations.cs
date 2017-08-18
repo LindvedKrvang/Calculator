@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Calculator
 {
-    public class CalculatorManager
+    public class CalculatorOperations
     {
         /// <summary>
         /// Adds alll the numbers given to it together.
