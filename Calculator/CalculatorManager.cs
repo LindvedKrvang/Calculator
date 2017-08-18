@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
 namespace Calculator
 {
@@ -21,7 +22,12 @@ namespace Calculator
 
         public float Divide(float dividend, float divisor)
         {
-            throw new System.NotImplementedException();
+            if (divisor == 0)
+            {
+                throw new InvalidOperationException("Can't divide with zero!");
+            }
+
+            return dividend / divisor;
         }
     }
 }

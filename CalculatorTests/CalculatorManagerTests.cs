@@ -103,7 +103,7 @@ namespace CalculatorTests
             var expectedResult = 3.125f;
             var result = calcManager.Divide(7.5f, 2.4f);
 
-            Assert.AreEqual(expectedResult, result);
+            Assert.AreEqual(expectedResult, result, 0.001f);
         }
     }
 }
