@@ -105,5 +105,35 @@ namespace CalculatorTests
 
             Assert.AreEqual(expectedResult, result, 0.001f);
         }
+
+        [TestMethod]
+        public void TestMultiplyTwoPositiveFloats()
+        {
+            var calcManager = new CalculatorManager();
+            var expectedResult = 21f;
+            var result = calcManager.Multiply(7, 3);
+
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        [TestMethod]
+        public void TestMultiplyFirstNegativeSecondPositive()
+        {
+            var calcManager = new CalculatorManager();
+            var expectedResult = -14f;
+            var result = calcManager.Multiply(-2f, 7f);
+
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        [TestMethod]
+        public void TestMultiplyFirstPositiveSecondNegative()
+        {
+            var calcManager = new CalculatorManager();
+            var expectedResult = -14f;
+            var result = calcManager.Multiply(2f, -7f);
+
+            Assert.AreEqual(expectedResult, result);
+        }
     }
 }

@@ -29,5 +29,10 @@ namespace Calculator
 
             return dividend / divisor;
         }
+
+        public float Multiply(float firstNumber, float secondNumber)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
